@@ -1,7 +1,8 @@
 package flower.store;
+import lombok.Getter;
 
 public class Rose extends Flower {
-    public String name= "rose";
+    private String name = "rose";
     @Override
     public  String toString() {
         return "The charming rose is found";
