@@ -1,21 +1,18 @@
 package flower.store;
-
 import lombok.Getter;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Store{
+public class Store {
     @Getter
-    static
+    private static
     Map<Object, Integer> catalog = new HashMap<Object, Integer>();
 
-    public void addFlower(Flower flower){
+    public void addFlower(Flower flower) {
         if (catalog.containsKey(flower.getFlowerType())){
             catalog.put((flower.getFlowerType()), catalog.get(flower.getFlowerType()) + 1);
         }
-        else{
+        else {
             catalog.put((flower.getFlowerType()), 1);
         }
     }
@@ -24,7 +21,7 @@ public class Store{
             catalog.put((flower.getFlowerType()), catalog.get(flower.getFlowerType()) - 1);
              return flower.toString();
         }
-        else{
+        else {
             return "Not found";
         }
     }
