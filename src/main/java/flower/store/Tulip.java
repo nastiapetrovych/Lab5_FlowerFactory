@@ -1,7 +1,7 @@
 package flower.store;
 import lombok.Getter;
 
-public class Tulip extends Flower{
+public class Tulip extends Flower {
     @Getter
     private String name = "tulip";
     @Override
