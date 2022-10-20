@@ -20,6 +20,7 @@ public class StoreTest {
         store.addFlower(new Rose());
         store.addFlower(new Tulip());
         Flower wantedFlower = new Rose();
-        Assertions.assertEquals("The charming rose is found", Store.search(wantedFlower));
+        Assertions.assertEquals("The charming rose is found", 
+                                Store.search(wantedFlower));
     }
 }
